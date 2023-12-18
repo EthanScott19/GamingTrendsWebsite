@@ -24,5 +24,6 @@ Make sure you only have data you want to be accessible in this bucket. In our ca
 I then used Route 53 to redirect our static website to a domain that I created. 
 
 ## Additional Files Provided
-In this repository, I also included the JSON files and the link to my website.
+In this repository, I also included the JSON files.
 The JSON files are from the first run of the lambda function working properly and are what I used as a reference when writing my JavaScript.
+Also, here is the link to the finished website: [redditgamedata.click]
