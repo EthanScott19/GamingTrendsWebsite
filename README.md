@@ -26,4 +26,4 @@ I then used Route 53 to redirect our static website to a domain that I created.
 ## Additional Files Provided
 In this repository, I also included the JSON files.
 The JSON files are from the first run of the lambda function working properly and are what I used as a reference when writing my JavaScript.
-Also, here is the link to the finished website: [redditgamedata.click](Reddit Game Data)
+Also, here is the link to the finished website: [redditgamedata.click](redditgamedata.click)
