@@ -13,7 +13,7 @@ I added a trigger to execute our function at 8 pm every day so we can get new re
 ## The HTML and JavaScript
 The JavaScript fetches the data from the three local JSON files (in the s3 bucket).
 It sorts the game in order by mentions on Reddit. The JSON file game_frequency.json has this value stored for all the games.
-Created a table of the games displaying the "Game"."Release Date" "Mentions" and "Reddit Posts". The Reddit posts part also links to the posts.
+I created a table of the games displaying the "Game"."Release Date" "Mentions" and "Reddit Posts". The Reddit posts part also links to the posts.
 I was hoping to add the cover images for the games but I couldn't figure out how to interpret the Cover ID we have in the JSON file. It has a number, but I don't know how to get an image from that number.
 I also added a countdown timer so the user knows when the next update is (the next time the lambda function is triggered).
 
