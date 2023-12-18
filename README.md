@@ -1,6 +1,6 @@
 # GamingTrendsWebsite
 
-##The Lambda Function
+## The Lambda Function
 The first part of my project was writing a function in Python that uses the Reddit API to search for mentions of games in a subreddit.
 In order to search for mentions of games in a subreddit my program had to know what words were games and what words weren't. So I used the IGDB api to use their database to create a list of game titles
 Due to their being way more games than I realized, and limitations with the IGDB API, I decided to make my project a tool for new and upcoming releases.
@@ -9,19 +9,19 @@ The lambda function puts all of our found data into a JSON file and sends it to 
 I then uploaded my Python file with all of the dependencies in a zip file to my lambda function
 I added a trigger to execute our function at 8pm everyday so we can get new results.
 
-##The HTML and JavaScript
+## The HTML and JavaScript
 The JavaScript fetches the data from the three local JSON files (in the s3 bucket).
 It sorts the game in order by mentions on reddit. The JSON file game_frequency.json has this value stored for all the games
 Created a table of the games displaying the "Game"."Release Date" "Mentions" and "Reddit Posts". The reddit posts part also links to the posts
 I was hoping to add the cover images for the games but I couldn't figure out how to interpret the Cover Id we have in the JSON file. It has a number, but I dont know how to get an image from that number
 Also added a countdown timer so the user knows when the next update is (the next time the lambda function is triggered)
 
-##Other AWS Services used
+## Other AWS Services used
 Once we have our JSON files and our html and js files in the s3 bucket, you can change the s3 bucket to host static website.
 When you do that you also have to create a bucket policy for the s3 bucket that grants public read access to the files. 
 Make sure you only have data you want to be accessible in this bucket. In our case the JSON files were for the public so this was fine.
 I then used Route 53 to redirect our static website to a domain that I created. 
 
-##Additional Files Provided
+## Additional Files Provided
 In this repository I also included the JSON files and the link to my website.
 The JSON files are from the first run of the lambda function working properly, and are what I used as a reference when writing my JavaScript
