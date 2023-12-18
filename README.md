@@ -18,7 +18,7 @@ I was hoping to add the cover images for the games but I couldn't figure out how
 I also added a countdown timer so the user knows when the next update is (the next time the lambda function is triggered).
 
 ## Other AWS Services used
-Once we have our JSON files and our HTML and JS files in the s3 bucket, you can change the s3 bucket to host a static website.
+Once we have our JSON, HTML, and JS files in the s3 bucket, you can change the s3 bucket to host a static website.
 When you do that you also have to create a bucket policy for the s3 bucket that grants public read access to the files. 
 Make sure you only have data you want to be accessible in this bucket. In our case, the JSON files were for the public so this was fine.
 I then used Route 53 to redirect our static website to a domain that I created. 
