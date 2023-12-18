@@ -2,8 +2,9 @@
 
 ## The Lambda Function
 The first part of my project was writing a function in Python that uses the Reddit API to search for mentions of games in a subreddit.
-In order to search for mentions of games in a subreddit my program had to know what words were games and what words weren't. So I used the IGDB api to use their database to create a list of game titles
-Due to their being way more games than I realized, and limitations with the IGDB API, I decided to make my project a tool for new and upcoming releases.
+To identify mentions of games in a subreddit my program had to be able to distinguish between words that are game titles and those that are not.
+To do this, I used the IGDB API and used their database to create a list of games.
+Due to there being way more games than I realized and limitations with the IGDB API, I decided to make my project a tool for new and upcoming releases.
 In the Python file attached, it is the exact code I wrote for my lambda function, except I took out my API keys and IDs
 The lambda function puts all of our found data into a JSON file and sends it to an s3 bucket
 I then uploaded my Python file with all of the dependencies in a zip file to my lambda function
